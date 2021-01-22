@@ -13,7 +13,8 @@ class TestController extends Controller
 
     public function viewWithoutMessage()
     {
-        return view('message.alert',['a'=>45,'b'=>46,'msg'=>'In alert']); 
+        $user =['Nishant','sushil','kajal','test'];
+        return view('message.alert',['a'=>45,'b'=>46,'msg'=>'In alert','v'=>4,'users'=>$user]); 
     }
 
     public function viewWithMessage($msg=null)
